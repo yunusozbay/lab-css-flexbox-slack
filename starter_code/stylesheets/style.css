@@ -12,9 +12,7 @@ body {
     margin: 0;
     font-family: Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif
 }
-img {
-    max-width: 750px;
-}
+
 nav {
     height: 100px;
     background-color: #540B51;
@@ -27,7 +25,7 @@ nav {
     width: 20%;
 }
 
-ul {
+nav ul {
     display: none;
 }
 nav button {
@@ -93,7 +91,10 @@ header {
 }
 
 .companiesimg img {
-    width: 200px;
+    max-width: 100px;
+    max-height: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 main {
     background-color: #F3EAE2;
@@ -119,9 +120,136 @@ main p {
 main a {
     text-decoration: none;
     color: #2E71A6;
-
+}
+main a::after {
+    content: url("../images/icon-arrow-right.png");
+    margin-left: 1%;
 }
 
-  
-      
+.teams {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.teamsbuttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.meetslackbtn {
+    background-color: #540B51;
+    color: white;
+    width: 90vw;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.salesbtn {
+    color: #540B51;
+    border-color: #540B51;
+    background-color: white;
+    width: 90vw;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.teams ul span {
+    color: #540B51;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+.teams ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    list-style: none;
+}
+.digitalHQ {
+    background-color: #540B51;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    gap: 1em;
+}
+.digitalHQ h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+.btn1 {
+    color: #540B51;
+    border-color: #540B51;
+    background-color: white;
+    width: 90vw;
+    height: 50px;
+    order: 1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn2 {
+    background-color: #540B51;
+    color: white;
+    width: 90vw;
+    height: 50px;
+    border-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.lists {
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer img {
+    width: 10%;
+    margin: 5%;
+}
+.lists ul :first-child {
+    font-weight: bold;
+}
+.lists ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+footer {
+    margin: 0 5% 0 5%;
+}
+footer hr {
+    width: 90%;
+}
+.status {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    font-weight: bold;
+    height: 350px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.status :nth-child(6)::before {
+    content: url("../images/icon-region.png");
+    margin-right: 15px;
+}
+.status :nth-child(7)::before {
+    content: url("../images/icon-download.png");
+    margin-right: 15px;
+}
+.status :nth-child(7) {
+    color: #4285F4;
+}
+.socialmedia {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+ 
     
