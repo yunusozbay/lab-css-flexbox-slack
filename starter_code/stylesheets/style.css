@@ -203,6 +203,7 @@ main a::after {
 .lists {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 footer img {
@@ -227,7 +228,7 @@ footer hr {
 .status {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     row-gap: 2em;
     font-weight: bold;
     height: 350px;
